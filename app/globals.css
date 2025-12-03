@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit);
+  
+  --color-brand-yellow: #FFD700;
+  --color-brand-black: #111111;
+  --color-brand-gray: #f3f4f6;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: white;
+  color: var(--color-brand-black);
+}
