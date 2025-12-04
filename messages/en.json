@@ -53,6 +53,18 @@
         "review4": "I love that they are open late! Saved me when I needed a notary last minute.",
         "author4": "Michael R."
     },
+    "features": {
+        "title": "Why Choose Tata Express?",
+        "subtitle": "We make complex paperwork simple, fast, and stress-free.",
+        "feature1Title": "One-Stop Shop",
+        "feature1Desc": "Handle your notary, DMV, and insurance needs all in one visit.",
+        "feature2Title": "Open Late & Weekends",
+        "feature2Desc": "We are open when others are closed to fit your busy schedule.",
+        "feature3Title": "Bilingual Service",
+        "feature3Desc": "Fully fluent in English and Spanish to serve our community better.",
+        "feature4Title": "Skip the DMV Lines",
+        "feature4Desc": "Get your tags and registration instantly without the long wait."
+    },
     "contact": {
         "title": "Get In Touch",
         "subtitle": "Have questions? We're here to help!",

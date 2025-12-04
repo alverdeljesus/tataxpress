@@ -53,6 +53,18 @@
         "review4": "¡Me encanta que estén abiertos hasta tarde! Me salvaron cuando necesité un notario de última hora.",
         "author4": "Michael R."
     },
+    "features": {
+        "title": "¿Por Qué Elegir Tata Express?",
+        "subtitle": "Hacemos que el papeleo complejo sea simple, rápido y sin estrés.",
+        "feature1Title": "Todo en Un Solo Lugar",
+        "feature1Desc": "Maneje sus necesidades de notario, DMV y seguros en una sola visita.",
+        "feature2Title": "Abierto Tarde y Fines de Semana",
+        "feature2Desc": "Estamos abiertos cuando otros están cerrados para adaptarnos a su horario.",
+        "feature3Title": "Servicio Bilingüe",
+        "feature3Desc": "Hablamos inglés y español para servir mejor a nuestra comunidad.",
+        "feature4Title": "Evite las Filas del DMV",
+        "feature4Desc": "Obtenga sus placas y registro al instante sin largas esperas."
+    },
     "contact": {
         "title": "Contáctanos",
         "subtitle": "¿Tienes preguntas? ¡Estamos aquí para ayudarte!",
