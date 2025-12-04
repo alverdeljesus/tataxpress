@@ -87,7 +87,7 @@ export default function Header() {
                                 className="flex items-center justify-center gap-2 bg-black text-white px-4 py-3 rounded-full font-bold"
                             >
                                 <Phone size={18} />
-                                <span>Call Now</span>
+                                <span>Calls Now</span>
                             </a>
                         </nav>
                     </motion.div>
