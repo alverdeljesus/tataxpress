@@ -41,6 +41,18 @@
         "hazleTownshipHours": "Monday - Saturday: 9:00 AM - 11:00 PM",
         "openInMaps": "Open in Google Maps"
     },
+    "reviews": {
+        "title": "What Our Customers Say",
+        "subtitle": "Rated 4.3/5 Stars on Google Reviews",
+        "review1": "Fast and friendly service! They helped me with my title transfer in no time. Highly recommended!",
+        "author1": "Maria G.",
+        "review2": "Great experience. The staff is very professional and explained everything clearly. Will come back!",
+        "author2": "John D.",
+        "review3": "Best place in Hazleton for tags and insurance. Very helpful team and great prices.",
+        "author3": "Sarah L.",
+        "review4": "I love that they are open late! Saved me when I needed a notary last minute.",
+        "author4": "Michael R."
+    },
     "contact": {
         "title": "Get In Touch",
         "subtitle": "Have questions? We're here to help!",

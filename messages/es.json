@@ -41,6 +41,18 @@
         "hazleTownshipHours": "Lunes - Sábado: 9:00 AM - 11:00 PM",
         "openInMaps": "Abrir en Google Maps"
     },
+    "reviews": {
+        "title": "Lo Que Dicen Nuestros Clientes",
+        "subtitle": "Calificación de 4.3/5 Estrellas en Google Reviews",
+        "review1": "¡Servicio rápido y amable! Me ayudaron con la transferencia de mi título en poco tiempo. ¡Muy recomendado!",
+        "author1": "Maria G.",
+        "review2": "Gran experiencia. El personal es muy profesional y explicó todo claramente. ¡Volveré!",
+        "author2": "John D.",
+        "review3": "El mejor lugar en Hazleton para placas y seguros. Equipo muy servicial y buenos precios.",
+        "author3": "Sarah L.",
+        "review4": "¡Me encanta que estén abiertos hasta tarde! Me salvaron cuando necesité un notario de última hora.",
+        "author4": "Michael R."
+    },
     "contact": {
         "title": "Contáctanos",
         "subtitle": "¿Tienes preguntas? ¡Estamos aquí para ayudarte!",
