@@ -25,7 +25,7 @@ export default function Footer() {
                             {t('tagline')}
                         </p>
                         <div className="flex gap-4">
-                            <a href="#" className="text-brand-yellow hover:text-white transition-colors">
+                            <a href="https://www.facebook.com/multiservic3s/" target="_blank" rel="noopener noreferrer" className="text-brand-yellow hover:text-white transition-colors">
                                 <Facebook size={24} />
                             </a>
                             <a href="#" className="text-brand-yellow hover:text-white transition-colors">
