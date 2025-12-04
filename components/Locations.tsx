@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Navigation, Phone } from "lucide-react";
+import { MapPin, Navigation, Phone, Clock } from "lucide-react";
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 
 const locations = [
     {
         nameKey: "hazleton",
+        hoursKey: "hazletonHours",
         address: "26 W Diamond Ave, Hazleton, PA 18201",
         phone: "570-455-7777",
         phoneLink: "tel:+15704557777",
@@ -16,6 +17,7 @@ const locations = [
     },
     {
         nameKey: "hazleTownship",
+        hoursKey: "hazleTownshipHours",
         address: "620 Hillside Dr, Hazle Township, PA 18202",
         phone: "272-333-1015",
         phoneLink: "tel:+12723331015",
@@ -80,6 +82,12 @@ export default function Locations() {
                                     <Phone size={20} className="text-brand-yellow" />
                                     {location.phone}
                                 </a>
+
+                                {/* Hours */}
+                                <p className="text-gray-600 font-medium mb-3 text-lg flex items-start gap-2">
+                                    <Clock size={20} className="text-brand-yellow shrink-0 mt-1" />
+                                    {t(location.hoursKey)}
+                                </p>
 
                                 <p className="text-gray-600 font-medium mb-6 text-lg flex items-start gap-2">
                                     <MapPin size={20} className="text-brand-yellow shrink-0 mt-1" />

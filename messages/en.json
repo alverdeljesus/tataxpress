@@ -36,7 +36,9 @@
         "title": "Visit Us",
         "subtitle": "Two convenient locations to serve you better!",
         "hazleton": "Hazleton Office",
+        "hazletonHours": "Monday - Saturday: 9:00 AM - 6:00 PM",
         "hazleTownship": "Hazle Township Office",
+        "hazleTownshipHours": "Monday - Saturday: 9:00 AM - 11:00 PM",
         "openInMaps": "Open in Google Maps"
     },
     "contact": {
