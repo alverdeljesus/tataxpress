@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, MapPin, Zap } from "lucide-react";
+import Image from "next/image";
+import { Phone, MapPin } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -28,14 +29,21 @@ export default function Hero() {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-4xl mx-auto text-center">
-                    {/* Animated Icon */}
+                    {/* Animated Logo */}
                     <motion.div
-                        initial={{ x: -100, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
+                        initial={{ scale: 0.5, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
                         transition={{ type: "spring", stiffness: 100, damping: 10 }}
-                        className="inline-flex items-center justify-center w-16 h-16 bg-brand-yellow rounded-full mb-6 shadow-lg"
+                        className="mb-8 flex justify-center"
                     >
-                        <Zap size={32} className="text-black fill-black" />
+                        <Image
+                            src="/logotata.png"
+                            alt="Tata Express Services Logo"
+                            width={200}
+                            height={200}
+                            className="w-48 h-auto object-contain drop-shadow-xl"
+                            priority
+                        />
                     </motion.div>
 
                     {/* Main Title */}

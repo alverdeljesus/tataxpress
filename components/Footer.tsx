@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
@@ -8,9 +9,15 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     {/* Brand */}
                     <div>
-                        <h3 className="text-2xl font-bold text-brand-yellow mb-4 uppercase italic">
-                            Tata Express
-                        </h3>
+                        <Link href="/" className="inline-block mb-4">
+                            <Image
+                                src="/logotata.png"
+                                alt="Tata Express Services"
+                                width={180}
+                                height={60}
+                                className="h-16 w-auto object-contain brightness-0 invert"
+                            />
+                        </Link>
                         <p className="text-gray-400 mb-4">
                             Fast, friendly, and fun multiservice office in Hazleton, PA.
                             We make paperwork easy!

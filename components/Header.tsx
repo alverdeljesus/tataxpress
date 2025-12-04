@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -20,8 +21,15 @@ export default function Header() {
         <header className="sticky top-0 z-50 bg-brand-yellow shadow-md">
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-bold tracking-tight text-black uppercase italic">
-                    Tata Express
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/logotata.png"
+                        alt="Tata Express Services"
+                        width={150}
+                        height={50}
+                        className="h-12 w-auto object-contain"
+                        priority
+                    />
                 </Link>
 
                 {/* Desktop Nav */}
