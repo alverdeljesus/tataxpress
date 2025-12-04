@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Navigation } from "lucide-react";
+import { MapPin, Navigation, Phone } from "lucide-react";
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 
@@ -9,12 +9,16 @@ const locations = [
     {
         nameKey: "hazleton",
         address: "26 W Diamond Ave, Hazleton, PA 18201",
+        phone: "570-455-7777",
+        phoneLink: "tel:+15704557777",
         mapLink: "https://www.google.com/maps/search/?api=1&query=26+W+Diamond+Ave,+Hazleton,+PA+18201",
         image: "/tatadiamond.JPG",
     },
     {
         nameKey: "hazleTownship",
         address: "620 Hillside Dr, Hazle Township, PA 18202",
+        phone: "272-333-1015",
+        phoneLink: "tel:+12723331015",
         mapLink: "https://www.google.com/maps/search/?api=1&query=620+Hillside+Dr,+Hazle+Township,+PA+18202",
         image: "/tatahillside.JPG",
     },
@@ -67,6 +71,16 @@ export default function Locations() {
                                 <h3 className="text-2xl font-bold text-black mb-3">
                                     {t(location.nameKey)}
                                 </h3>
+
+                                {/* Phone Number */}
+                                <a
+                                    href={location.phoneLink}
+                                    className="flex items-center gap-2 text-brand-yellow hover:text-yellow-600 font-bold text-lg mb-3 transition-colors"
+                                >
+                                    <Phone size={20} />
+                                    {location.phone}
+                                </a>
+
                                 <p className="text-gray-600 font-medium mb-6 text-lg flex items-start gap-2">
                                     <MapPin size={20} className="text-brand-yellow shrink-0 mt-1" />
                                     {location.address}
