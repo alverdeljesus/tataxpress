@@ -75,9 +75,9 @@ export default function Locations() {
                                 {/* Phone Number */}
                                 <a
                                     href={location.phoneLink}
-                                    className="flex items-center gap-2 text-brand-yellow hover:text-yellow-600 font-bold text-lg mb-3 transition-colors"
+                                    className="flex items-center gap-2 text-black hover:text-brand-yellow font-bold text-lg mb-3 transition-colors"
                                 >
-                                    <Phone size={20} />
+                                    <Phone size={20} className="text-brand-yellow" />
                                     {location.phone}
                                 </a>
 
