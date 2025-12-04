@@ -48,7 +48,7 @@ export default function Header() {
                     ))}
                     <LanguageSwitcher />
                     <a
-                        href="tel:+15701234567" // Placeholder number, will update if provided
+                        href="tel:+15704557777"
                         className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full font-bold hover:bg-gray-800 transition-transform hover:scale-105"
                     >
                         <Phone size={18} />
@@ -89,7 +89,7 @@ export default function Header() {
                             <div className="flex gap-2">
                                 <LanguageSwitcher />
                                 <a
-                                    href="tel:+15701234567"
+                                    href="tel:+15704557777"
                                     className="flex items-center justify-center gap-2 bg-black text-white px-4 py-3 rounded-full font-bold flex-1"
                                 >
                                     <Phone size={18} />

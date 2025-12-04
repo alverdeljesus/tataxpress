@@ -64,7 +64,7 @@ export default function Hero() {
                             <motion.a
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                href="tel:+15701234567"
+                                href="tel:+15704557777"
                                 className="flex items-center justify-center gap-2 bg-brand-yellow text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition-colors shadow-lg"
                             >
                                 <Phone size={24} />
