@@ -1,0 +1,71 @@
+{
+    "header": {
+        "services": "Servicios",
+        "locations": "Ubicaciones",
+        "contact": "Contacto",
+        "callNow": "Llamar Ahora"
+    },
+    "hero": {
+        "title": "TATA EXPRESS",
+        "subtitle": "SERVICIOS",
+        "tagline": "¡Oficina Multiservicios Rápida, Amigable y Divertida en Hazleton!",
+        "callNow": "Llamar Ahora",
+        "getDirections": "Obtener Direcciones"
+    },
+    "services": {
+        "title": "Nuestros Servicios",
+        "subtitle": "¡Nosotros nos encargamos del papeleo para que puedas volver a tu día!",
+        "notary": {
+            "title": "Servicios Notariales",
+            "description": "Notarización rápida y fácil para todos tus documentos legales."
+        },
+        "titleTransfers": {
+            "title": "Transferencias de Título",
+            "description": "Transferencias rápidas de títulos para vehículos, botes y más."
+        },
+        "registration": {
+            "title": "Registro",
+            "description": "Renovaciones instantáneas de registro y servicios de placas."
+        },
+        "insurance": {
+            "title": "Seguros",
+            "description": "Cotizaciones de seguros asequibles para auto, hogar y negocio."
+        }
+    },
+    "locations": {
+        "title": "Visítanos",
+        "subtitle": "¡Dos ubicaciones convenientes para servirte mejor!",
+        "hazleton": "Oficina de Hazleton",
+        "hazleTownship": "Oficina de Hazle Township",
+        "openInMaps": "Abrir en Google Maps"
+    },
+    "contact": {
+        "title": "Contáctanos",
+        "subtitle": "¿Tienes preguntas? ¡Estamos aquí para ayudarte!",
+        "contactInfo": "Información de Contacto",
+        "phone": "Teléfono",
+        "email": "Correo Electrónico",
+        "businessHours": "Horario de Atención",
+        "hours": {
+            "weekdays": "Lun - Vie: 9:00 AM - 5:00 PM",
+            "saturday": "Sáb: 10:00 AM - 2:00 PM",
+            "sunday": "Dom: Cerrado"
+        },
+        "sendMessage": "Enviar un Mensaje",
+        "form": {
+            "name": "Nombre",
+            "namePlaceholder": "Tu Nombre",
+            "phone": "Teléfono",
+            "phonePlaceholder": "Tu Teléfono",
+            "message": "Mensaje",
+            "messagePlaceholder": "¿Cómo podemos ayudarte?",
+            "submit": "Enviar Mensaje"
+        }
+    },
+    "footer": {
+        "tagline": "Oficina multiservicios rápida, amigable y divertida en Hazleton, PA. ¡Hacemos que el papeleo sea fácil!",
+        "services": "Servicios",
+        "contactUs": "Contáctanos",
+        "copyright": "Tata Express Services. Todos los derechos reservados."
+    }
+}

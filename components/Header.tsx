@@ -5,16 +5,19 @@ import Link from "next/link";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const t = useTranslations('header');
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const navLinks = [
-        { name: "Services", href: "#services" },
-        { name: "Locations", href: "#locations" },
-        { name: "Contact", href: "#contact" },
+        { name: t('services'), href: "#services" },
+        { name: t('locations'), href: "#locations" },
+        { name: t('contact'), href: "#contact" },
     ];
 
     return (
@@ -43,12 +46,13 @@ export default function Header() {
                             {link.name}
                         </Link>
                     ))}
+                    <LanguageSwitcher />
                     <a
                         href="tel:+15701234567" // Placeholder number, will update if provided
                         className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full font-bold hover:bg-gray-800 transition-transform hover:scale-105"
                     >
                         <Phone size={18} />
-                        <span>Call Now</span>
+                        <span>{t('callNow')}</span>
                     </a>
                 </nav>
 
@@ -82,13 +86,16 @@ export default function Header() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <a
-                                href="tel:+15701234567"
-                                className="flex items-center justify-center gap-2 bg-black text-white px-4 py-3 rounded-full font-bold"
-                            >
-                                <Phone size={18} />
-                                <span>Calls Now</span>
-                            </a>
+                            <div className="flex gap-2">
+                                <LanguageSwitcher />
+                                <a
+                                    href="tel:+15701234567"
+                                    className="flex items-center justify-center gap-2 bg-black text-white px-4 py-3 rounded-full font-bold flex-1"
+                                >
+                                    <Phone size={18} />
+                                    <span>{t('callNow')}</span>
+                                </a>
+                            </div>
                         </nav>
                     </motion.div>
                 )}

@@ -2,40 +2,43 @@
 
 import { motion } from "framer-motion";
 import { FileText, Car, ShieldCheck, PenTool } from "lucide-react";
-
-const services = [
-    {
-        title: "Notary Services",
-        description: "Quick and easy notarization for all your legal documents.",
-        icon: PenTool,
-    },
-    {
-        title: "Title Transfers",
-        description: "Fast title transfers for vehicles, boats, and more.",
-        icon: FileText,
-    },
-    {
-        title: "Registration",
-        description: "Instant registration renewals and license plate services.",
-        icon: Car,
-    },
-    {
-        title: "Insurance",
-        description: "Affordable insurance quotes for auto, home, and business.",
-        icon: ShieldCheck,
-    },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Services() {
+    const t = useTranslations('services');
+
+    const services = [
+        {
+            title: t('notary.title'),
+            description: t('notary.description'),
+            icon: PenTool,
+        },
+        {
+            title: t('titleTransfers.title'),
+            description: t('titleTransfers.description'),
+            icon: FileText,
+        },
+        {
+            title: t('registration.title'),
+            description: t('registration.description'),
+            icon: Car,
+        },
+        {
+            title: t('insurance.title'),
+            description: t('insurance.description'),
+            icon: ShieldCheck,
+        },
+    ];
+
     return (
         <section id="services" className="py-20 bg-brand-gray">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-extrabold text-black mb-4 uppercase italic">
-                        Our Services
+                        {t('title')}
                     </h2>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        We handle the paperwork so you can get back to your day!
+                        {t('subtitle')}
                     </p>
                 </div>
 

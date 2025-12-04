@@ -3,8 +3,11 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+    const t = useTranslations('hero');
+
     return (
         <section className="relative bg-white overflow-hidden py-20 lg:py-32">
             {/* Background Elements */}
@@ -53,8 +56,8 @@ export default function Hero() {
                         transition={{ delay: 0.2 }}
                         className="text-5xl md:text-7xl font-extrabold text-black mb-6 tracking-tight leading-tight"
                     >
-                        TATA EXPRESS <br />
-                        <span className="text-brand-yellow bg-black px-4 transform -skew-x-6 inline-block mt-2">SERVICES</span>
+                        {t('title')} <br />
+                        <span className="text-brand-yellow bg-black px-4 transform -skew-x-6 inline-block mt-2">{t('subtitle')}</span>
                     </motion.h1>
 
                     {/* Subtitle */}
@@ -64,7 +67,7 @@ export default function Hero() {
                         transition={{ delay: 0.4 }}
                         className="text-xl md:text-2xl text-gray-600 mb-10 font-medium"
                     >
-                        Fast, Friendly, and Fun Multiservice Office in Hazleton!
+                        {t('tagline')}
                     </motion.p>
 
                     {/* Buttons */}
@@ -79,14 +82,14 @@ export default function Hero() {
                             className="flex items-center justify-center gap-2 bg-brand-yellow text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition-transform hover:scale-105 shadow-lg"
                         >
                             <Phone size={24} />
-                            Call Now
+                            {t('callNow')}
                         </a>
                         <a
                             href="#locations"
                             className="flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition-transform hover:scale-105 shadow-lg"
                         >
                             <MapPin size={24} />
-                            Get Directions
+                            {t('getDirections')}
                         </a>
                     </motion.div>
                 </div>

@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+    const t = useTranslations('footer');
+
     return (
         <footer className="bg-black text-white py-12">
             <div className="container mx-auto px-4">
@@ -19,8 +22,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-gray-400 mb-4">
-                            Fast, friendly, and fun multiservice office in Hazleton, PA.
-                            We make paperwork easy!
+                            {t('tagline')}
                         </p>
                         <div className="flex gap-4">
                             <a href="#" className="text-brand-yellow hover:text-white transition-colors">
@@ -34,18 +36,18 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-xl font-bold text-brand-yellow mb-4">Services</h4>
+                        <h4 className="text-xl font-bold text-brand-yellow mb-4">{t('services')}</h4>
                         <ul className="space-y-2">
-                            <li><Link href="#services" className="hover:text-brand-yellow transition-colors">Notary Services</Link></li>
-                            <li><Link href="#services" className="hover:text-brand-yellow transition-colors">Title Transfers</Link></li>
-                            <li><Link href="#services" className="hover:text-brand-yellow transition-colors">Registration</Link></li>
-                            <li><Link href="#services" className="hover:text-brand-yellow transition-colors">Insurance</Link></li>
+                            <li><Link href="#services" className="hover:text-brand-yellow transition-colors">{useTranslations('services')('notary.title')}</Link></li>
+                            <li><Link href="#services" className="hover:text-brand-yellow transition-colors">{useTranslations('services')('titleTransfers.title')}</Link></li>
+                            <li><Link href="#services" className="hover:text-brand-yellow transition-colors">{useTranslations('services')('registration.title')}</Link></li>
+                            <li><Link href="#services" className="hover:text-brand-yellow transition-colors">{useTranslations('services')('insurance.title')}</Link></li>
                         </ul>
                     </div>
 
                     {/* Contact Info */}
                     <div>
-                        <h4 className="text-xl font-bold text-brand-yellow mb-4">Contact Us</h4>
+                        <h4 className="text-xl font-bold text-brand-yellow mb-4">{t('contactUs')}</h4>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
                                 <MapPin className="text-brand-yellow shrink-0" size={20} />
@@ -71,7 +73,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                    <p>&copy; {new Date().getFullYear()} Tata Express Services. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} {t('copyright')}</p>
                 </div>
             </div>
         </footer>
