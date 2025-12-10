@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Send, Phone, Mail, Clock } from "lucide-react";
+import { Send } from "lucide-react";
 import { useTranslations } from 'next-intl';
 
 export default function Contact() {
@@ -19,62 +19,15 @@ export default function Contact() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                    {/* Contact Info */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        className="space-y-8"
-                    >
-                        <div className="bg-white p-8 rounded-3xl shadow-lg">
-                            <h3 className="text-2xl font-bold text-black mb-6">{t('contactInfo')}</h3>
-                            <ul className="space-y-6">
-                                <li className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center text-black shrink-0">
-                                        <Phone size={24} />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-bold uppercase">{t('phone')}</p>
-                                        <a href="tel:+15704557777" className="text-xl font-bold text-black hover:text-brand-yellow transition-colors">
-                                            (570) 455-7777
-                                        </a>
-                                    </div>
-                                </li>
-                                <li className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center text-black shrink-0">
-                                        <Mail size={24} />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-bold uppercase">{t('email')}</p>
-                                        <a href="mailto:info@tataexpress.com" className="text-xl font-bold text-black hover:text-brand-yellow transition-colors">
-                                            info@tataexpress.com
-                                        </a>
-                                    </div>
-                                </li>
-                                <li className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center text-black shrink-0">
-                                        <Clock size={24} />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-bold uppercase">{t('businessHours')}</p>
-                                        <p className="text-lg font-medium text-black">{t('hours.weekdays')}</p>
-                                        <p className="text-lg font-medium text-black">{t('hours.saturday')}</p>
-                                        <p className="text-lg font-medium text-black">{t('hours.sunday')}</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </motion.div>
-
+                <div className="flex justify-center max-w-4xl mx-auto">
                     {/* Contact Form */}
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="bg-white p-8 rounded-3xl shadow-lg"
+                        className="bg-white p-8 rounded-3xl shadow-lg w-full max-w-2xl"
                     >
-                        <h3 className="text-2xl font-bold text-black mb-6">{t('sendMessage')}</h3>
+                        <h3 className="text-2xl font-bold text-black mb-6 text-center">{t('sendMessage')}</h3>
                         <form className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
